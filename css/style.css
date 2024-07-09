@@ -1,0 +1,142 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: aliceblue;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 30%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: #ff69b4;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  text-shadow: 2px 2px #ffa07a;
+  background-color: lightpink;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+legend {
+  font-weight: bold;
+}
+
+.required {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  padding: 2px 5px;
+  margin-left: 5px;
+  border-radius: 3px;
+  font-size: 0.8em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: darkcyan;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 150px;
+}
+
+input[type="submit"]:hover {
+    background-color: lightseagreen;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 2em;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.rating input:checked ~ label,
+.rating input:checked ~ label ~ label {
+    color: #f5b301;
+}
+
+@media (max-width: 600px) {
+  .container {
+      width: 100%;
+      padding: 10px;
+  }
+
+  form {
+      gap: 5px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="submit"] {
+      padding: 8px;
+  }
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background-color: #f2f2f2;
+}
+
+.average-rating {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: hotpink;
+  color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  width: 20%; 
+  margin-left: auto; /* 左右中央揃え */
+  margin-right: auto; /* 左右中央揃え */
+}
